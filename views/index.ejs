@@ -1,0 +1,27 @@
+<%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+
+<h2>Choose your table</h2>
+   
+   <div class="form-div">
+
+
+
+    <form action="/" method="POST">
+        <button type="submit" value="students" name="table_name">Students table</button>
+        <button type="submit" value="courses" name="table_name">Courses table</button>
+        <button type="submit" value="students_courses" name="table_name">Students_courses table</button>
+    </form>
+</div>
+    
+
+<div class="flexbox">
+    <%- include('partials/dataTables') %>
+    
+</div>
+
+
+    <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<% if(typeof dbData != 'undefined'){%>
+    <% console.log(dbData[0],"viktors")%>
+    <table border="1" class="table">
+            <th> id</th>
+            <th> Name</th>
+            <th> LastName</th>
+            <th> Town</th>
+    <% dbData[0].forEach( row => {%>
+        <tr>
+        <% Object.values(row).forEach( value => {%>
+        <td> 
+            <%= value; %>  
+        </td>
+        <% }); %>
+        </tr>
+    <% }); %>
+    
+    </table>
+    <% } %>

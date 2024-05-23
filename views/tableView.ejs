@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <h1><%= pageTitle %></h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <% dbDataHeaders.forEach(header => { %>
+                    <th><%= header.Field %></th>
+                <% }); %>
+            </tr>
+        </thead>
+        <tbody>
+            <% dbData.forEach(row => { %>
+                <tr>
+                    <% dbDataHeaders.forEach(header => { %>
+                        <td><%= row[header.Field] %></td>
+                    <% }); %>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>

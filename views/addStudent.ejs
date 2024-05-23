@@ -1,0 +1,28 @@
+<%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    
+
+   
+    <div class="studentsform-div">
+
+    <form action="/addStudent" method="POST">
+        First Name: <input type="text" name="fName">
+        Last Name: <input type="text" name="lName">
+        Town: <input type="text" name="town">
+        <button type="submit">Add now</button>
+    </form>
+
+    </div>
+
+
+     <h2> <%= pageTitle; %></h2>
+
+     <div class="flexbox">
+        <%- include('partials/studentsTable') %>
+        
+    </div>
+    
+    <%- include('partials/footer') %>
+</body>
+</html>

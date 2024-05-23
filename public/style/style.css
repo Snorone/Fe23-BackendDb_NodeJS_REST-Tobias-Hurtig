@@ -1,0 +1,82 @@
+*{padding: 0;
+margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+    padding: 5vh;
+}
+body{
+    background-color: aquamarine;
+}
+
+.table{
+    border: solid;
+    margin: 10vh;
+    padding: 5px;
+    table-layout: auto;
+}
+.btn {
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 1px solid #333333;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+}
+
+.form-div{
+    padding:5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.studentsform-div{
+    display: flex;
+    padding:5vh;
+    justify-content: space-around;
+}
+.coursesform-div{
+    display: flex;
+    padding:5vh;
+    justify-content: space-around;
+}
+
+.show{
+    display: flex;
+    padding:5vh;
+    justify-content: space-around;
+}
+
+
+.dont-show{
+    display: none;
+    padding:5vh;
+    justify-content: space-around;
+}

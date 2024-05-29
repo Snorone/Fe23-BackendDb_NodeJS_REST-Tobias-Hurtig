@@ -4,10 +4,10 @@ margin: 0 auto;
 
 h2{
     text-align: center;
-    padding: 5vh;
+    padding: 2vh;
 }
 body{
-    background-color: aquamarine;
+    background-color: lightseagreen;
 }
 
 .table{
@@ -57,26 +57,8 @@ body{
     justify-content: space-around;
 }
 
-.studentsform-div{
+.form-div{
     display: flex;
-    padding:5vh;
-    justify-content: space-around;
-}
-.coursesform-div{
-    display: flex;
-    padding:5vh;
-    justify-content: space-around;
-}
-
-.show{
-    display: flex;
-    padding:5vh;
-    justify-content: space-around;
-}
-
-
-.dont-show{
-    display: none;
     padding:5vh;
     justify-content: space-around;
 }

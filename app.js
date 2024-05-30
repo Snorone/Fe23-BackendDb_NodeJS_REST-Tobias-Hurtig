@@ -124,12 +124,14 @@ app.get('/addAssociation', async (req, res) => {
 app.post('/addAssociation', async (req, res) => {
     console.log(req.body, "Tobbe");
         const{students_id, courses_id} = req.body;
-        const sqlAddQuery = `INSERT INTO "${assTable}" ("id", "students_id", "courses_id") values("${students_id}", "${courses_id}")`;    
+        const sqlAddQuery = 'INSERT INTO students_courses (students_id, courses_id) VALUES (?, ?)';
+        const sqlParams = [req.body.students_id, req.body.courses_id];
 
-        
+
     const pageTitle = `${assTable}`;
-    const addQuery = await db.query(sqlAddQuery);
-    const sql = `SELECT * FROM ${assTable}`;
+    const addQuery = await db.query(sqlAddQuery, sqlParams);
+    
+    const sql = 'SELECT * FROM students_courses';
     const [dbData] = await db.query(sql);
     const sql2 = `DESCRIBE ${assTable}`;
     const dbDataHeaders = await db.query(sql2);

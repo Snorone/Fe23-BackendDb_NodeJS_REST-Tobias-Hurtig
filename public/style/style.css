@@ -12,7 +12,8 @@ body{
 
 .table{
     border: solid;
-    margin: 10vh;
+    margin: 2vh;
+    margin-bottom: 5vh;
     padding: 5px;
     table-layout: auto;
 }

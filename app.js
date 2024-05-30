@@ -11,7 +11,6 @@ app.use(bodyParser.json());
 
 ////////////////Routing////////////////
 
-
 app.get('/', async (req, res) => {
     try {
         const pageTitle = "All tables";
@@ -366,8 +365,6 @@ app.get('/courses/partofdescription/:description', async (req, res) => {
 });
 
 //////////////////////////////////////////////////////
-
-
 
 app.use((err, req, res, next) => {
     console.log("SERVER ERROR: ", err);

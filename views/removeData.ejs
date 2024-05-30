@@ -4,14 +4,16 @@
     
 
     <h2> <%= pageTitle; %></h2>
-
+    <div class="form-div">
     <form action="/removeData" method="POST">
         row id to be removed: <input type="text" name="id" >
         <button type="submit">Remove row</button>
     </form>
+</div>
 
+<div class="flexbox">
     <%- include('partials/dataTables') %>
-    
+    </div>
     <%- include('partials/footer') %>
 </body>
 </html>
